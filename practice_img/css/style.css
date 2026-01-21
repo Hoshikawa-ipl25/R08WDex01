@@ -1,0 +1,12 @@
+@charset "utf-8";
+img {
+  /* ↓書いてない場合の比較用にコメントアウトしていますが、実務ではこれをimgに最初に書くようにしましょう。 */
+  /* display: block; */
+  width: 100%;
+}
+
+div {
+  width: 30%;
+  height: auto;
+  background-color: rgb(222, 143, 206);
+}

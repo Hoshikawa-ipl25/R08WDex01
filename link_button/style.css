@@ -1,0 +1,11 @@
+@charset "UTF-8";
+a.text-link {
+  color: #008000;
+  text-decoration: none;
+}
+
+/* マウスカーソルを載せた時 */
+a.text-link:hover {
+  color: #c8fc59;
+  text-decoration: underline;
+}

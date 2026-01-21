@@ -1,0 +1,19 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #eda87e;
+  padding: 32px;
+}
+div {
+  background-color: #efddcd;
+  border: 5px solid #61240d;
+  margin: 30px;
+  padding: 20px 40px;
+  width: 320px;
+}
+h1 {
+  margin: 50px 30px;
+}
