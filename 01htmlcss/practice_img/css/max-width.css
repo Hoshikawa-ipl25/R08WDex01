@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 教科書P79のmax-widthプロパティの確認 */
+
+/* imgタグは、親要素の大きさ100%で広がっている状態 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 横幅を1200pxに設定 */
+/* 閲覧者が1200pxのモニタやウインドウで見ていた場合に */
+/* 画像がはみ出ないように、 max-width:100%; を追加 */
+div {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(222, 143, 206);
+}

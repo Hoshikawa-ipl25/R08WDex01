@@ -1,0 +1,11 @@
+@charset "utf-8";
+div {
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+
+  width: 300px;
+  background-color: red;
+  border: 5px solid blue;
+  margin: 30px;
+  padding: 50px;
+}

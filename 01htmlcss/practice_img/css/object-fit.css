@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.apply-object-fit {
+  object-fit: cover;
+}
