@@ -1,0 +1,39 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  width: 300px;
+  text-align: center;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: burlywood;
+  color: #fff;
+  line-height: 60px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  opacity: 0.6;
+}
+
+section {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
