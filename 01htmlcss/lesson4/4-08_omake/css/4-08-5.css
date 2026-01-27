@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*divに対してpを中央配置*/
+div {
+  position: relative;
+  height: 300px;
+}
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

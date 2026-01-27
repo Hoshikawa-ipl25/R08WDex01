@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*pタグに対して中央配置(flex編)*/
+p {
+  display: flex;
+  /* 垂直方向位置 align-items */
+  align-items: center;
+
+  /* 水平方向の位置 justify-content*/
+  justify-content: center;
+}
+
+/* おまけ */
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

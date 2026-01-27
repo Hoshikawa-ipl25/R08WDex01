@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*imgタグとspanタグを中央揃え*/
+img,
+span {
+  vertical-align: middle;
+}
+
+/* インライン要素の縦方向中央揃え */
+/* （正式な記述方法じゃないかも） */
+p {
+  /* text-align: center; */
+  align-content: center;
+}

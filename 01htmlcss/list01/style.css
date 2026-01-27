@@ -15,3 +15,36 @@ ul li {
   border-bottom: 4px dotted #6baeb3;
   margin-bottom: 1em;
 }
+
+/* 疑似要素・手前＝before に文字や画像などのコンテンツを追加 */
+ul li::before {
+  /* 教科書と違って、cssフォルダ内にこのstyle.cssはいないので、相対パスが変わります */
+  content: url("img/check.png");
+  margin-right: 4px;
+
+  /* 文字と画像の縦方向の中心をそろえる */
+  vertical-align: middle;
+}
+
+ol {
+  border: 10px solid #ffc43d;
+  padding: 20px 40px; /* 上下20px 左右40px */
+}
+
+ol li {
+  /* 確認用のボーダー線（完成したら消す） */
+  /* border: 1px solid #ccc; */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  /* 背景画像を設定 */
+  background: url("img/arrow.png") left bottom no-repeat;
+}
+
+ol li:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  /* 透明色＝transparent */
+  background: transparent;
+}

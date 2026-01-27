@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+section {
+  /* 作業中わかりやすくするための背景色（完成したら消す） */
+  /* background-color: aqua; */
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+
+  /* gapプロパティ flexで並ぶ要素同士の余白を作る。 */
+  /* 数値１つで縦と横の余白 、２つ並べた時は、横の余白（２行以上の時の）、縦の余白、の順の設定に*/
+  /* gap: 50px 20px; */
+  /* justify-content: flex-start; */
+
+  /* おまけ・横並び要素の中身を縦に中央揃えしたい時は、align-item */
+  /* align-items: center; */
+}
+
+img {
+  width: 400px;
+
+  /* flexの横同士の余白、margin-rightで開けてもいい */
+  /* （一番左の項目に右に大きめの余白が目立つこともあるので、工夫が必要な時も） */
+  /* margin-right: 50px; */
+}
+
+p {
+  width: 550px;
+}

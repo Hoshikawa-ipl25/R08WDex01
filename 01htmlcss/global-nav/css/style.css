@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 初期設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+/* navigation全体用 */
+.gnav-wrap {
+  background: #1b9aaa;
+}
+
+.gnav-inner {
+  margin-inline: auto;
+  padding: 0.5em 1.5em;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b9aaa;
+}
+
+.gnav-logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.gnav-list {
+  text-align: center;
+  /* ここの背景色は、将来ハンバーガーボタンを作成する時に必要な色。現時点ではなくても表示に問題はない。 */
+  /* background: #1b9aaa; */
+  display: flex;
+  padding: 0;
+  gap: 2em;
+}
+
+.gnav-list li a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gnav-list li a span {
+  font-size: 12px;
+  display: block;
+}
