@@ -1,0 +1,17 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div {
+  background: red;
+  width: 320px;
+  height: 320px;
+
+  margin-top: 100px;
+  margin-inline: auto;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  background: red;
+  width: 320px;
+  height: 320px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* 親要素に align-items: center; を設定するか */
+/* 子要素に align-self: center; を設定するか、どちらでもOKです */
+/* 親要素に設定すると、その中身の子要素、全部がセンタリングされる */
+/* 子要素だと、設定されるもの、設定されないもの、を分けることが可能 */
+
+/* p {
+  align-self: center;
+} */
