@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* 教科書P151のCSS記述 */
+
+dt,
+dd,
+select,
+input,
+textarea {
+  color: #666;
+}
+
+/* 疑似要素で飾り */
+dt::before {
+  content: "◆";
+  color: #1b9aaa;
+  padding-right: 6px;
+}
+
+/* 入力欄の調整 */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0.3em;
+}
+select {
+  height: 2em;
+}
+.label-radio {
+  margin-right: 2em;
+}
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+textarea {
+  min-height: 100px;
+}
+input[type="submit"] {
+  background: #1b9aaa;
+  width: 200px;
+  padding: 0.5em;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* PCのみ ボタンにマウスオーバーで色が変わる */
+@media screen and (min-width: 769px) {
+  input[type="submit"]:hover {
+    background: #147581;
+
+    /* ボタンのマウスオーバーでカーソルを手指のマークに変える */
+    cursor: pointer;
+  }
+}
+
+/* モバイル用CSS */
+@media screen and (max-width: 768px) {
+  dt {
+    margin-bottom: 10px;
+  }
+  input[type="submit"] {
+    padding: 1em;
+  }
+}

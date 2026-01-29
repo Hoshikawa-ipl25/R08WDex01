@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson4-12 フォームのデザイン（HTML編）</title>
+  </head>
+  <body>
+    <form action="program.php" method="post">
+      <input type="text" name="text_form" />
+      <br />
+      <input type="password" name="pass" />
+      <br />
+      <input type="date" name="date" />
+      <br />
+      <br />
+      <!-- チェックボックス -->
+      <!-- <input type="checkbox" id="mikan" /><label for="mikan">みかん</label> -->
+      <label>
+        <input type="checkbox" name="fruit" value="みかん" checked />
+        みかん
+      </label>
+      <label><input type="checkbox" name="fruit" value="りんご" />りんご</label>
+      <label><input type="checkbox" name="fruit" value="ぶどう" />ぶどう</label>
+      <!-- 違う書き方 （labelタグで挟まずに連動させる方法）-->
+      <input type="checkbox" id="peach" name="fruit" value="もも" />
+      <label for="peach">もも</label>
+      <br />
+      <br />
+      <!-- ラジオボタン -->
+      <label><input type="radio" name="job" value="学生" />学生</label>
+      <label>
+        <input type="radio" name="job" value="会社員" checked />会社員
+      </label>
+      <label><input type="radio" name="job" value="その他" />その他</label>
+      <br />
+      <br />
+      <input type="submit" value="送信する" />
+    </form>
+  </body>
+</html>

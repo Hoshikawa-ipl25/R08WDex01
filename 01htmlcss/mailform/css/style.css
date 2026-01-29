@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* 初期設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* レイアウト */
+body {
+  background: #eee;
+}
+h1 {
+  font-size: 1.5em;
+  color: #1b9aaa;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+form {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: #fff;
+  padding: 40px 0;
+}
+dl {
+  /* background: #f8d7f2; */
+  width: 500px;
+  margin: 0 auto;
+  /* margin-inline: auto; */
+}
+.form-item {
+  display: flex;
+  /* background: #f4f7e1; */
+  justify-content: center;
+  margin-bottom: 40px;
+}
+dt {
+  width: 200px;
+  /* background: #2eb3ca; */
+}
+dd {
+  /* background: #c8e8ee; */
+  width: 300px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+.form-submit {
+  text-align: center;
+}
+
+/* モバイル用CSS */
+@media screen and (max-width: 768px) {
+  form {
+    padding: 20px 0;
+  }
+  dl {
+    /* background: #eeffee; */
+    width: 90%;
+  }
+  .form-item {
+    display: block;
+    /* ↓flexのまま、並び方向を変える、という場合 */
+    /* flex-direction: column; */
+  }
+  dt {
+    width: 100%;
+  }
+  dd {
+    width: 100%;
+  }
+}
+
+/* ラジオボタンと項目名の文字の中央揃え */
+input[type="radio"] {
+  vertical-align: middle;
+}
