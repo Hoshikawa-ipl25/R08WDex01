@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+  color: #666;
+}
+p {
+  color: brown;
+}
+
+p.red {
+  color: red;
+}
+
+p#blue {
+  color: blue;
+}
+
+div p {
+  color: yellow;
+}
+
+div p.red {
+  color: orange;
+}
+
+div#pink p {
+  color: pink;
+}
+
+/* !important は最終兵器 */
+/* p {
+  color: green !important;
+} */
