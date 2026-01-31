@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* 初期設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    /* "Noto Sns JP", */ Meiryo,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  display: block;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+p {
+  margin: 1em 0;
+}
+
+/* 本体設定 */
+
+/* サイトロゴ */
+h1 img {
+  width: 200px;
+  margin-inline: auto;
+}
+
+section {
+  width: 100%;
+  background: #a68072;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 2.5em;
+  padding-bottom: 4em;
+  /* padding-bottom: 3.75em; */
+}
+
+section .inner {
+  width: 80%;
+  /* width: 70%; */
+  margin-inline: auto;
+}
+section h2 {
+  font-size: 1.4em;
+  border-bottom: 3px solid #fff;
+  /* border-bottom: 4px solid #fff; */
+  margin-bottom: 2em;
+  /* margin-bottom: 30px; */
+}
+
+section h3 {
+  margin-bottom: 1.2em;
+}
+
+section h4 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+section ul,
+ol {
+  margin: 1em 2em;
+  /* margin-bottom: 10px; */
+}
+section ul li {
+  line-height: 1.6;
+}
+section ol li {
+  line-height: 2;
+}
+section#campaign {
+  background-color: #a68072;
+}
+section#schedule {
+  background-color: #6889a6;
+}
+section#price {
+  background-color: #010d26;
+}
+section#form {
+  background-color: #624a3b;
+}
+
+/* 料金メニューテーブル設定 */
+table,
+form {
+  width: 90%;
+  /* width: 80%; */
+  margin-inline: auto;
+  /* min-width: 640px; */
+}
+table,
+th,
+td {
+  border: 1px solid #3d5a6d;
+  background-color: #fff;
+  color: #333;
+}
+th,
+td {
+  padding: 1em;
+}
+th {
+  background-color: #687c9f;
+  color: #fff;
+}
+
+/* お問い合わせフォーム */
+dt::before {
+  content: "◆";
+  margin-right: 0.5em;
+  /* margin-right: 10px; */
+}
+dt {
+  margin-bottom: 1em;
+  /* margin-bottom: 20px; */
+}
+
+dd {
+  margin-bottom: 2em;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+  width: 100%;
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  margin-left: 2em;
+  margin-right: 0.4em;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.radio-btm-item {
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 2em;
+  /* margin-top: 40px; */
+  padding: 1em;
+  /* padding: 20px; */
+  background-color: #ff8124;
+  color: #fff;
+  font-size: 1.2em;
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding-top: 2em;
+  /* padding-top: 30px; */
+  padding-bottom: 2em;
+  /* padding-bottom: 20px; */
+  color: #666666;
+}
+address {
+  padding-bottom: 1em;
+  /* padding-bottom: 10px; */
+}
