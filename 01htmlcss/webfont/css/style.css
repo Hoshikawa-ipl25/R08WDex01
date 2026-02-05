@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* cssでWebフォントを読み込む場合 */
+/* @import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div {
+  font-family: "Playwrite CU Guides", "Kaisei Decol", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
