@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body {
+  transition: 0.8s;
+}
+
+.night-mode {
+  background: #333;
+  color: #fff;
+}

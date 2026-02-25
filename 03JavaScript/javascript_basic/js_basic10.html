@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10.数値（Number）</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>10.数値（Number）</h2>
+    <div class="inner">
+      <pre>
+いわゆる数字のこと。
+半角入力で、'「シングルクォート」や"「ダブルクォート」を使わずに記述する。
+
+const kazu = 1;
+console.log(kazu);
+ー＞1
+
+四則演算が可能。
+足し算
+console.log(3+4);
+ー＞7
+
+引き算
+console.log(5-2);
+ー＞3
+
+掛け算
+console.log(5*3);
+ー＞15
+
+割り算
+console.log(6/2);
+ー＞3
+
+計算の順番も四則演算通り
+console.log(3+2*2);
+ー＞7
+
+()がある場合は、そちらを先に計算する
+console.log((3+2)*2);
+ー＞10
+
+割った時の余りを求める剰余算
+console.log(5%2);
+ー＞1
+      </pre>
+    </div>
+    <script>
+      //変数kazuを定義し、数値1を代入
+      const kazu = 1;
+      const a_num = 3;
+      const b_num = 4;
+
+      //開発者ツールに変数kazuを出力
+      console.log(kazu); // 結果 1
+      //足し算
+      console.log(kazu + 4); // 5
+      //引き算
+      console.log(b_num - 2); // 2
+
+      //掛け算
+      console.log(a_num * b_num); //12
+
+      //割り算
+      console.log(6 / a_num); // 2
+
+      //足し算と掛け算が混合した場合 四則演算のルールでOK
+      console.log(3 + 2 * 2); // 7
+
+      //()で足し算を括った場合
+      console.log((3 + 2) * 2); // 10
+
+      //ある数をある数で割った時のあまりを求める剰余算
+      console.log(5 % 2); // 5÷2=2 余り1
+    </script>
+  </body>
+</html>

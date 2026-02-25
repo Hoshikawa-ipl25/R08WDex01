@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>論理演算子を使った複数同時の条件文</title>
+  </head>
+  <body>
+    <script>
+      const height = 100;
+      const ticket = 0;
+
+      // if文入れ子で複数の条件を同時OKな場合を記述
+      //
+      // if (height >= 90) {
+      //   if (ticket === true) {
+      //     alert('ファストパスでいますぐ乗れます');
+      //   } else {
+      //     alert('スプラッシュマウンテンに乗れます。列に並んで下さい。'); // 90cm以上
+      //   }
+      // } else {
+      //   alert('90cm未満の方は搭乗できません');
+      // }
+
+      //論理演算を使って、複数同時の条件を１行で書く
+      if (height >= 90 && ticket === true) {
+        alert('ファストパスでいますぐ乗れます');
+      } else if (height >= 90) {
+        alert('スプラッシュマウンテンの列に並んで下さい。'); // 90cm以上
+      } else {
+        alert('90cm未満の方は搭乗できません');
+      }
+    </script>
+  </body>
+</html>

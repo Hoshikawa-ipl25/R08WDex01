@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オブジェクトと繰り返し</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>オブジェクトと繰り返し</h2>
+    <div class="inner">
+        <pre>
+オブジェクトも、配列同様繰り返し処理と相性が良く、一気に出力する事ができる。
+const cat = {
+    'name':'みけ',
+    'type':'ミックス',
+    'age':'4',
+    'seibetsu':'オス',
+    'color':'黒'
+}
+
+for in文を使うと、オブジェクトを全て出力できる
+for(その繰り返しで使うキーが入っている変数 in オブジェクト名){
+    処理
+}
+
+for(key in cat){
+    console.log(key+'は、'+cat[key]);
+}
+
+    </pre>
+    </div>
+    <script>
+        //オブジェクトcatを定義し、データを格納
+
+
+        //for in文で出力
+
+
+    </script>
+</body>
+
+</html>

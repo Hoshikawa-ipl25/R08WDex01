@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="wih2h=device-wih2h, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>javascript基礎</title>
+    </head>
+
+    <body>
+        <h1>javascript基礎</h1>
+        <div class="row">
+            <div class="inner">
+                <section>
+                    <h2>プログラムが出来る事</h2>
+                    <div>
+                        <p>プログラムが出来る事は、たった4種類。</p>
+                        <ul>
+                            <li>入力</li>
+                            <li>出力</li>
+                            <li>分岐</li>
+                            <li>繰り返し</li>
+                        </ul>
+                        <p>この4つを組み合わせて、動いている</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>出力</h2>
+                    <ul>
+                        <li>
+                            <a href="js_basic01.html">01.ブラウザの注意メッセージを出力</a>
+                        </li>
+                        <li>
+                            <a href="js_basic02.html">02.開発者ツールにメッセージを出力</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>入力</h2>
+                    <ul>
+                        <li><a href="js_basic03.html">03.変数について</a></li>
+                        <li><a href="js_basic04.html">04.変数の使い方の一例</a></li>
+                        <li><a href="js_basic05.html">05.変数の種類について</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>データ型について</h2>
+                    <p>jsで扱えるデータには、その役割によって「型」という分類がある</p>
+                    <p>とりあえず覚えておきたいデータ型は以下の6つ</p>
+                    <ul>
+                        <li><a href="#string">文字列（String）</a></li>
+                        <li><a href="#number">数値（Number）</a></li>
+                        <li><a href="#boolean">真偽値（Boolean）</a></li>
+                        <li><a href="#array">配列（array）</a></li>
+                        <li><a href="#object">オブジェクト（object）</a></li>
+                        <li><a href="#function">関数（function）</a></li>
+                    </ul>
+                </section>
+                <section id="string">
+                    <h2>文字列について</h2>
+                    <ul>
+                        <li><a href="js_basic06.html">06.文字列の概要</a></li>
+                        <li><a href="js_basic07.html">07.文字列の連結</a></li>
+                        <li>
+                            <a href="js_basic08.html">08.少し難しい（"などを含む）文字列の連結</a>
+                        </li>
+                        <li><a href="js_basic09.html">09.色々な文字列の扱い方</a></li>
+                    </ul>
+                </section>
+                <section id="number">
+                    <h2>数値について</h2>
+                    <ul>
+                        <li><a href="js_basic10.html">10.数値の概要</a></li>
+                        <li><a href="js_basic11.html">11.様々な計算</a></li>
+                        <li><a href="js_basic12.html">12.少し複雑な計算</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>分岐</h2>
+                    <div>
+                        <p>条件に応じて、処理する内容を切り替える事ができる。</p>
+                        <p>
+                            もし○○だったら、xxxをする。<br />そうじゃなくて●●だったら、yyyをする。<br />○○でも●●でもなかったら、zzzをする。
+                        </p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic13.html">13.if文について</a></li>
+                        <li>
+                            <a href="js_basic14.html">14.うるう年かどうかを調べるプログラム</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="array">
+                    <h2>配列について</h2>
+                    <div>
+                        <p>
+                            変数が、一つの変数に対してデータを一つしか代入できないのに対し、配列を使うと複数のデータを代入する事ができる。
+                        </p>
+                        <p>
+                            変数が、データを格納しておく箱のような物なのに対して、配列は、箱に仕切りをつけて複数の値を入れられるようにしたもの。
+                        </p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic15.html">15.配列の定義方法と出力方法</a></li>
+                        <li><a href="js_basic16.html">16.今日の日付を出力</a></li>
+                        <li><a href="js_basic17.html">17.今日の日付を出力（配列使用）</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>繰り返しについて</h2>
+                    <div>
+                        <p>同じような処理を、何度か繰り返す時に使う。</p>
+                        <p>〇〇の文字を、xx回繰り返し書く。</p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic18.html">18.for文について</a></li>
+                        <li><a href="js_basic19.html">19.配列と繰り返し</a></li>
+                        <li><a href="js_basic20.html">20.for文以外の繰り返しの書き方</a></li>
+                    </ul>
+                </section>
+
+                <section id="object">
+                    <h2>オブジェクトについて</h2>
+                    <div>
+                        <p>
+                            配列が、数字の順番でデータを格納するのに対し、オブジェクトは、データに名前をつけて格納する事ができる。
+                        </p>
+                        <p>一つの物に、複数の関連情報などを格納するのに便利。</p>
+                        <p>また、「オブジェクト指向」という最近のプログラムの主たる考え方をするのにも使われる。</p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic21.html">21.オブジェクトの定義と出力方法</a></li>
+                        <li><a href="js_basic22.html">22.オブジェクトと繰り返し</a></li>
+                    </ul>
+                </section>
+
+                <section id="function">
+                    <h2>関数について</h2>
+                    <p>
+                        関数とは、あらかじめ処理を記述しておいて、その後任意のタイミングで実行する事で、処理を行う為にある。<br />
+                        よって、通常は後述するイベントと合わせて使われる事が多い。
+                    </p>
+                    <ul>
+                        <li><a href="js_basic23.html">23.関数の定義と実行方法</a></li>
+                        <li><a href="js_basic24.html">24.引数について</a></li>
+                        <li><a href="js_basic25.html">25.戻り値について</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>イベントについて</h2>
+                    <div>
+                        <p>ユーザーの動作のタイミングに合わせて処理を実行させる事。</p>
+                        <p>〇〇したら、xxxをする。</p>
+                        <p>ボタンをクリックしたら、yyyをする。</p>
+                        <p>「xxxをする」の部分は、関数で指定する。（この関数はよくリスナー関数と呼ばれる）</p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic26.html">26.イベントの定義方法</a></li>
+                        <li><a href="js_basic27.html">27.無名関数について</a></li>
+                    </ul>
+                </section>
+                <section id="boolean">
+                    <h2>真偽値</h2>
+                    <div>
+                        <p>真偽値は、文字列や数値と違い、使える値があらかじめ決まっている。</p>
+                        <ul>
+                            <li>true</li>
+                            <li>false</li>
+                        </ul>
+                        <p>以上のどちらかの値しか使えない。</p>
+                    </div>
+                    <ul>
+                        <li><a href="js_basic28.html">28.真偽値とif文</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

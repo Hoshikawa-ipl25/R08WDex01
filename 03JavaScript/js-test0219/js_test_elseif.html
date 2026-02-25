@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>else if文のサンプル</title>
+  </head>
+  <body>
+    <script>
+      // lunchMoneyの中の数値をいろいろ変えて確認しましょう
+      let lunchMoney = 1000;
+
+      //lunchMoneyの中身が950以上の場合
+      if (lunchMoney >= 950) {
+        alert('Aランチ 950円');
+      }
+
+      //lunchMoneyの中身が850以上の場合
+      else if (lunchMoney >= 850) {
+        alert('Bランチに＋50円でみそ汁を豚汁に変更');
+      }
+
+      //lunchMoneyの中身が800以上の場合
+      else if (lunchMoney >= 800) {
+        alert('Bランチ 800円');
+      }
+
+      // ピタリ賞
+      else if (lunchMoney === 777) {
+        alert('レシート見てびっくり');
+      }
+
+      //ここまでの条件すべてにあてはまらなかった、それ以外の場合
+      else {
+        alert('コンビニのおにぎり');
+      }
+    </script>
+  </body>
+</html>

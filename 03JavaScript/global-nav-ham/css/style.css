@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* 初期設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* 作業中の確認用背景色。コーディング終わったら消していい */
+  background: #b4e9e5;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navigation全体用 */
+.gnav-wrap {
+  background: #1b9aaa;
+}
+
+.gnav-inner {
+  margin-inline: auto;
+  padding: 0.5em 1.5em;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b9aaa;
+}
+
+.gnav-logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ハンバーガーメニューボタン 非表示 */
+.gnav-button {
+  display: none;
+}
+
+.gnav-list {
+  text-align: center;
+  /* ↓ここの背景色は、ハンバーガーボタン使用時の、スライドなメニュー表示で必要な背景色 */
+  background: #1b9aaa;
+  display: flex;
+  padding: 0;
+  gap: 2em;
+}
+
+.gnav-list li a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gnav-list li a span {
+  font-size: 12px;
+  display: block;
+}
+
+/* ハンバーガーメニュー用追記 */
+/* ボタン本体の調整 */
+.gnav-button {
+  height: 50px;
+  width: 60px;
+  /* background-color: #003344; */
+  background-color: transparent;
+  border: none;
+  /* ↓ position: relative; は、<span>タグがabsoluteで位置調整する時の基準位置になる*/
+  position: relative;
+}
+/* 「メニュー」テキスト */
+.gnav-button span {
+  font-weight: bold;
+  color: #fff;
+  /* background: #809f81; */
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ボタンの線 */
+.gnav-button::before,
+.gnav-button::after,
+.gnav-button span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 28px;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.gnav-button::before {
+  top: 8px;
+}
+.gnav-button::after {
+  top: 24px;
+}
+.gnav-button span::before {
+  top: -14px;
+}
+
+/* アイコンのアニメーション */
+.is-open .gnav-button::before {
+  transform: rotate(45deg);
+  top: 16px;
+  left: 16px;
+}
+.is-open .gnav-button::after {
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 16px;
+}
+.is-open .gnav-button span::before {
+  background-color: transparent;
+}
+
+/* モバイル用のCSS 画面幅800px以下の時 */
+@media screen and (max-width: 800px) {
+  .gnav-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .gnav-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding-top: 10vh;
+    z-index: 100;
+    width: 100%;
+    max-width: 240px;
+    height: 100vh;
+    flex-direction: column;
+    transition: 0.3s;
+  }
+  .is-open .gnav-list {
+    left: 0;
+  }
+}
+/* モバイル用のCSS 画面幅800px以下 ここまで */

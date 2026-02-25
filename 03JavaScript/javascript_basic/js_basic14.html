@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うるう年かどうかを調べるプログラム</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>うるう年かどうかを調べるプログラム</h2>
+    <div class="inner">
+        <pre>
+もし年数が、4で割り切れたらうるう年、
+さらに、もし100で割り切れる場合はうるう年じゃない、
+さらに、もし400で割り切れた場合はうるう年。
+全ての条件を満たさない時はうるう年じゃない。
+
+const year = 2020;
+
+let message = '';
+if(year % 400 == 0){
+    mes = year+'年はうるう年';
+}else if(year % 100 == 0){
+    mes = year+'年はうるう年じゃない';
+}else if(year % 4 == 0){
+    mes = year+'年はうるう年';
+}else{
+    mes = year+'年はうるう年じゃない';
+}
+
+const text = document.querySelector('#text');
+text.innerHTML = mes;
+    </pre>
+        <p id="text"></p>
+    </div>
+    <script>
+        //変数yearに2021を代入
+
+
+        //条件が複数ある時は、満たされにくい順から考えると、if文が少しシンプルになる
+
+        //idがtextのpタグにメッセージを出力
+
+
+    </script>
+</body>
+
+</html>

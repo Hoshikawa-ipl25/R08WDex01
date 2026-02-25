@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字列の連結</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>文字列の連結</h2>
+    <div class="inner">
+      <pre>
+文字列は、「+」記号を使って、連結させることが出来る。
+console.log('上田さん' + 'こんにちは');
+ー＞上田さんこんにちは
+
+変数に代入された文字列も同様に結合することができる。
+また、3つ以上の文字列も結合することができる。
+const kei = 'さん';
+console.log('下川' + kei + 'おはようございます。');
+ー＞下川さんおはようございます
+      </pre>
+      <p id="text1"></p>
+      <p id="text2"></p>
+    </div>
+    <script>
+      //idがtext1のpタグに、文字列「上田さん」と文字列「こんにちは」を連結させつつ出力
+      // →とりあえず、console.logの方に、組み合わせた文字列の表示を確認させていきます
+      console.log('上田さん' + 'こんにちは');
+
+      //定数keiを作成し、文字列「さん」を代入
+      const kei = 'さん';
+      console.log('下川' + kei + 'おはようございます');
+
+      //idがtext1のpタグに、文字列「下川」、変数kei、文字列「おはようございます。」を連結させつつ出力
+      document.querySelector('#text1').innerHTML = '下川' + kei + 'おはようございます。';
+    </script>
+  </body>
+</html>

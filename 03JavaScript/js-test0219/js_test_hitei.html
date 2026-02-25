@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>条件式の否定の書き方</title>
+  </head>
+  <body>
+    <script>
+      //否定の例文コード
+      // 2026年2月11日
+      // let isWeekDay = true; // 平日かどうかる
+      // let isPublicHoliday = true; // 祝日かどうか
+
+      // 2026年2月19日
+      let isWeekDay = true; // 平日かどうかる
+      let isPublicHoliday = false; // 祝日かどうか
+
+      // if (isWeekDay && isPublicHoliday) {
+      //   // アラームをセットしないで寝る
+      // }
+
+      // もし「平日」かつ「祝日ではない」なら
+
+      //if (isWeekDay === true && !(isPublicHoliday === true))
+      if (isWeekDay && !isPublicHoliday) {
+        alert('朝7時のアラームをセットしました。');
+        console.log('朝7時のアラームをセットしました。');
+      }
+    </script>
+  </body>
+</html>

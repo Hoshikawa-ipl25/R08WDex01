@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引数について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>引数について</h2>
+    <div class="inner">
+        <pre>
+引数を実行時に指定できる様にする事によって、同じ関数でも指定する引数に応じて処理内容を変える事が出来る。
+const taxin = (kakaku)=>{
+    console.log(kakaku*1.1);
+}
+
+関数の実行時に、「()」の中にデータを入れる
+なお引数を使用する記述をした関数の実行は、引数を省略できない。
+taxin(1000);
+ー＞1100
+
+※関数taxinの引数に100を入れると、おかしな数値になる。これはjavascriptの謎の仕様なので、対策する必要があるが、ここでは割愛。
+
+引数は、「,」で区切って幾つでも入れる事ができる
+const heikin = (num1,num2) =>{
+    console.log((num1 + num2) / 2);
+}
+
+関数を実行するときは、引数を使う分だけ記述する必要がある
+heikin(4,8);
+ー＞6
+    </pre>
+    </div>
+    <script>
+        //関数taxinを定義。引数に1.1をかけて開発者ツールに出力
+
+
+        //関数taxinを実行。引数に1000を入れる。
+
+
+        //関数heikinを定義。二つの引数を足して2で割り、開発者ツールに出力
+
+
+        //関数heikinを実行。引数に4と8を入れる。
+
+    </script>
+</body>
+
+</html>

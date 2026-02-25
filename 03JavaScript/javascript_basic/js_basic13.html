@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if文について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>if文について</h2>
+    <div class="inner">
+        <pre>
+基本的な書き方
+if(条件){
+    処理
+}
+条件が成り立つ時に、処理を行い、成り立たない時は何もしない
+
+const kazu = 1;
+if(kazu == 1){
+    console.log('変数kazuは1です');
+};
+※左辺と右辺が等しいかどうかを調べるには、「==」を使う。
+
+成り立たない時の処理を書く事ができる
+if(条件){
+    処理1
+}else{
+    処理2
+}
+条件が成り立つ時は処理1を行い、成り立たない時は処理2を行う
+
+const kazu2 = 10;
+if(kazu2 == 10){
+    console.log('変数kazu2は10です');
+}else{
+    console.log('変数kazu2は10じゃないです');
+};
+
+条件を複数書くこともできる
+if(条件1){
+    処理1
+}else if(条件2){
+    処理2
+}
+条件1が成り立つ時は処理1を行い、（条件1が成り立たず）条件2が成り立つ時は処理2を行う
+なお、条件は複数入れる事ができる。さらにelseを使って、どの条件にも当てはまらない処理を入れることもできる。
+
+const kazu3 = 100;
+if(kazu3 == 1){
+    console.log('変数kazu3は1です')；
+}else if(kazu3 ==10){
+    console.log('変数kazu3は10です');
+}else{
+    console.log('変数kazu3は1でも10でもないです');
+};
+
+条件を複数入れた時の注意点
+if(条件a){
+    処理a
+}else if(条件b){
+    処理b
+}
+もし、条件1と条件2がどちらも成り立つ場合、処理aのみを実行し、処理bは行われない
+const kazu4 = 10;
+if(kazu4 > 5){
+    console.log('変数kazu4は5より大きいです');
+}else if(kazu4 == 10){
+    console.log('変数kazu4は10です');
+};
+    </pre>
+    </div>
+    <script>
+        //変数kazuに1を代入
+
+
+        //変数kazuが、1だった時に開発者ツールに、文字列「変数kazuは1です」を出力
+
+
+        //変数kazu2に10を代入
+
+
+        //変数kazu2が,10だった時に文字列「変数kazu2は10です」を、
+        //10じゃなかった時には、文字列「変数kazu2は10じゃないです」を開発者ツールに出力
+
+
+
+
+
+        //変数kazu3に100を代入
+
+
+        //変数kazu3が、1だった時に文字列「変数kazu3は1です」を、
+        //10だった時に文字列「変数kazu3は10です」を、
+        //1でも10でもない時は、「変数kazu3は1でも10でもないです」を開発者ツールに出力
+
+
+
+
+
+    </script>
+</body>
+
+</html>

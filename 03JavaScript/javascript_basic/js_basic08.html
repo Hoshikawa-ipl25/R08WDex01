@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>少し難しい（"などを含む）文字列の連結</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>少し難しい（"などを含む）文字列の連結</h2>
+    <div class="inner">
+        <pre>
+HTMLを出力する時などは、"(ダブルクォート)などの記号も、
+文字列の一部として扱う場合がある。
+通常の文字に比べると、少しわかりにくいので気をつける必要がある。
+const css_file = 'style.css';
+console.log('&lt;link rel="stylesheet" href="' + css_file + '"&gt;');
+    </pre>
+        <p id="text"></p>
+    </div>
+    <script>
+        //変数css_fileを作成し、文字列「style.css」を代入
+
+        //linkタグを文字列として結合しつつidがtextのpタグに出力
+
+    </script>
+</body>
+
+</html>

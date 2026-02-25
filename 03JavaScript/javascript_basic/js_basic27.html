@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無名関数について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>無名関数について</h2>
+    <div class="inner">
+        <pre>
+あらかじめ定義していない関数を、addEventListenerに入れる事もできる。
+この場合、関数を定義する事なく記述できる分、楽にはなるが、
+関数に名前をつけられないので後で使い回せない。
+無名関数と呼ぶ。
+let btn = document.querySelector('#btn');
+
+
+btn.addEventListener('click',()=>{
+    let html = document.createElement('p');
+    html.innerHTML = 'クリックされた';
+
+    let target = document.querySelector('#content');
+    target.appendChild(html);
+});
+htmlに要素を追加するときは、まず変数にdocument.createElement(タグ名)で要素を作成し、
+その後、変数.innerHTMLで、内容を記述する必要がある。
+その変数を、出力したい場所のHTMLを取得し、appendChild()で出力する。
+</pre>
+    </div>
+    <p class="btn"><button id="btn">ボタン</button></p>
+    <div class="inner" id="content"></div>
+    <script>
+        //idがbtnのボタン要素を変数btnに代入
+
+
+        //btnにイベントとリスナー関数を設定
+        //リスナー関数は、あらかじめ定義するのではなく、無名関数で指定
+
+            //追加されるp要素を作成
+
+            //作った要素に文字を書く
+
+
+            //要素を追加したい場所のHTMLを取得
+
+            //要素を追加したい場所に、追加したい要素を出力
+
+
+    </script>
+</body>
+
+</html>

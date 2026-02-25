@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>色々な文字列の扱い方</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>色々な文字列の扱い方</h2>
+    <div class="inner">
+        <pre>
+`「バッククォート」で括られた文字列の中では、${変数名}という形で、文字列を結合できる。
+const kei = 'さん';
+console.log(`こんにちは、伊藤${kei}`);
+ー＞こんにちは、伊藤さん
+
+また、`を使うと、その中の改行が有効になる。
+const kana = `あいうえお
+かきくけこ
+さしすせそ`;
+console.log(kana);
+->
+あいうえお
+かきくけこ
+さしすせそ
+    </pre>
+        <p id="text"></p>
+    </div>
+    <script>
+        //変数keiを定義し、文字列「さん」を代入
+
+
+        //idがtextのpタグに、`「バッククォート」で文字列を括り、
+        //その中に${変数名}の形で文字列を連結
+
+
+        //変数kanaを定義し、文字列をバッククォートで代入
+        //あいうえお、かきくけこ、さしすせそで、各々改行する
+        //その際、インデント用のスペースは削除する
+
+
+        //開発者ツールに変数kanaを出力
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントの定義方法</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>イベントの定義方法</h2>
+    <div class="inner">
+        <pre>
+イベントが発生した時に実行したい内容を関数で定義する。
+const btn_click = () => {
+    console.log('ボタンがクリックされました');
+}
+
+イベントを発生させる元のHTMlを取得し、変数に格納する。
+その際、HTMLの読み込み順に注意する必要がある。
+もし、イベントを発生させる元のHTMLが読み込まれる前にjavascriptを実行してしまうと、動かなくなってしまうので、
+HTMLが読み込まれた後に処理が実行される様にscriptを制御する必要がある。
+
+let btn = document.querySelector('#btn');
+
+HTMLが格納された変数に、イベントをセットする
+変数.addEventListener(イベント名,行いたい処理);
+
+btn.addEventListener('click', btn_click);
+
+
+</pre>
+    </div>
+    <p class="btn"><button id="btn">ボタン</button></p>
+
+    <script>
+        //関数btn_clickを定義
+
+        //idがbtnのボタン要素を変数btnに代入
+
+        //btnにイベントとリスナー関数を設定
+
+    </script>
+</body>
+
+</html>

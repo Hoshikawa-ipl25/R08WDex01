@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>少し複雑な計算</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>少し複雑な計算</h2>
+    <div class="inner">
+        <pre>
+合計金額が10000円、人数が4名の割り前勘定
+const kane = 10000;
+const ninzu = 4;
+console.log(kane / ninzu);
+ー＞2500
+
+合計金額が30000円、男性が3名、女性が4名で、
+払う金額の比が、男性と女性で2:1の場合の男性、女性一人が払う金額
+
+計算方法
+1.女性一人が払う金額を調べる
+方法は、ひとまず全員女性だったとして考える
+男性の人数（3名）に2をかけた数（女性だった場合の金額負担分の人数）と、
+女性の人数（4名）を足す。
+その数字で、合計金額を割ると、女性一人が払うべき金額がわかる。
+
+
+2.男性が払うべき金額の合計を調べる
+方法は、合計金額から、1.で調べた金額と女性の人数をかけた値（女性が払う金額の合計）を引く。
+
+
+3.
+男性一人が払うべき金額を調べる
+2.で調べた男性が払う金額の合計を、男性の人数で割る。
+
+合計金額、男性の数、女性の数を変数に格納
+const goukei = 30000;
+const male = 3;
+const female = 4;
+
+1.
+全員が女性だったとした場合の、仮の女性の人数を、変数m_plus_fに代入する
+const m_plus_f = female + male * 2;
+
+女性一人が払う金額を、変数f_singleに代入する
+const f_single = goukei / m_plus_f;
+
+2.
+男性が払う金額の合計を、変数m_goukeiに代入する
+const m_goukei = goukei - f_single * femail;
+
+3.
+男性一人が払う金額を、変数m_singleに代入する
+const m_single = m_goukei / male;
+
+console.log(m_single);
+console.log(f_single);
+ー＞6000
+ー＞3000
+    </pre>
+        <p id="text"></p>
+    </div>
+    <script>
+        //合計金額、男性の数、女性の数を変数に格納
+
+
+        /*
+        1.
+        全員が女性だったとした場合の、仮の女性の人数を、変数m_plus_fに代入する
+        */
+
+
+        //女性一人が払う金額を、変数f_singleに代入する
+
+
+        /*
+        2.
+        男性が払う金額の合計を、変数m_goukeiに代入する
+        */
+
+
+        /*
+        3.
+        男性一人が払う金額を、変数m_singleに代入する
+        */
+
+
+        /*
+        4.
+        idがtextのpタグに、f_single、m_singleを使ってメッセージを出力
+        */
+
+    </script>
+</body>
+
+</html>

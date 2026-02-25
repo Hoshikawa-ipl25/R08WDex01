@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>変数の使い方の一例</title>
+  </head>
+
+  <body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>変数の使い方の一例</h2>
+    <div class="inner">
+      <pre>
+変数は、文章の中の「共通する部分」をデータとして代入しておくと、合理的に作業ができる。
+
+例）
+鈴木さん
+佐藤さん
+田中さん
+以上のような文章があるとして、敬称である「さん」を「君」に直す場合、
+三箇所の「さん」を「君」に直さなくてはならない。
+
+鈴木君->1回
+佐藤君->2回
+田中君->3回
+
+これがもし、300人分直そうと思ったら、300箇所直さなくてはならない。
+
+もし敬称である「さん」を変数をつかって書いていた場合、、、
+
+const kei = 'さん';
+'斎藤' + kei;
+'伊藤' + kei;
+'山本' + kei;
+
+以上のような文章で、「さん」を「君」に直そうとすると、
+
+const kei = '君';
+'斎藤' + kei;
+'伊藤' + kei;
+'山本' + kei;
+
+一箇所だけ直せば良い。
+仮に、300人分直そうと思っても、一箇所だけ直せば良い。
+
+      </pre>
+    </div>
+    <script>
+      //敬称も含めて名前を出力する
+      //   console.log('鈴木さん');
+      //   console.log('佐藤さん');
+      //   console.log('田中さん');
+
+      //その後、敬称を直そうとすると、全ての名前の敬称を変更する必要がある
+
+      //変数keiを作成し、文字列「さん」を代入する
+      const kei = 'さん';
+
+      //敬称を、変数keiを使って、名前と変数keiを結合して出力
+      console.log('鈴木' + kei);
+      console.log('佐藤' + kei);
+      console.log('田中' + kei);
+      //その後、敬称を直そうとすると、変数keiに代入している「さん」を直すだけでOK
+
+      //計算式お試し
+      console.log(1 + 1); // 2 （数値の計算）
+      console.log('1' + '1'); // 11　（文字の連結）
+      console.log('1' + 1); // 11　（Javascriptが融通を利かせて文字列扱いで対処してくれていますが、あまりやらないように…！）
+    </script>
+  </body>
+</html>

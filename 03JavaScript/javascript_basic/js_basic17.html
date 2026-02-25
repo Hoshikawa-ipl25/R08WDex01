@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日の日付を出力（配列使用）</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>今日の日付を出力（配列使用）</h2>
+    <div class="inner">
+        <pre>
+js_basic16.htmlのコードは、配列を使うとif文を省略する事ができ、かなり短く書く事ができる。
+
+const week = ['日','月','火','水','木','金','土'];
+const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const date = today.getDate();
+const day = today.getDay();
+
+const now_date = year + '年' + month + '月' + date + '日' + '（' + week[day] + '）';
+
+console.log(now_date);
+</pre>
+    </div>
+    <script>
+        //配列weekを定義して、日〜土までのデータを格納する
+
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = today.getMonth() + 1;
+        const date = today.getDate();
+        const day = today.getDay();
+
+        //変数now_dateを作成し、年月日と曜日を結合
+
+    </script>
+</body>
+
+</html>

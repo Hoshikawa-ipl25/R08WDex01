@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戻り値について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>戻り値について</h2>
+    <div class="inner">
+        <pre>
+関数の処理の中で、return を書く事で、関数の中で処理した内容を、関数を実行した場所に戻す事ができる。
+returnは、「値を戻す」だけでなく「プログラムを止める」という意味もある為、通常関数の処理の中の最後に書かれる事が多い。
+
+const large_num = (num1,num2) => {
+    let larger;
+    if(num1 > num2){
+        larger = num1;
+    }else{
+        larger = num2;
+    }
+    return larger;
+}
+
+const apple = 120;
+const banana = 100;
+
+戻り値がある関数を実行すると、その値を左辺に代入する事ができる。
+const num = large_num(apple,banana);
+console.log('りんごとバナナの金額の高い方は、' + num + '円です。');
+
+戻り値を設定しておくと、関数を使いまわせる
+
+const tone = 322;
+const tama = 138;
+
+const num2 = large_num(tone,tama);
+console.log('利根川と多摩川の長い方は、約' + num2 + 'kmです。');
+</pre>
+    </div>
+    <script>
+        //関数large_numを定義。引数を2つ取れる様にする
+        //関数でやりたい事
+        //1.最終的に戻り値として戻す変数を定義
+        //2.二つの引数の大きさを調べて、大きい方を変数に代入
+        //3.変数をreturnする
+
+
+        //変数appleとbananaを定義し、appleに120、bananaに100を代入
+
+
+        //変数numを定義し、右辺に引数をappleとbananaを入れて、関数large_numを実行
+
+        //文字列を連結しつつ開発者ツールに出力
+
+        //変数toneとtamaを定義し、toneに322、tamaに138を代入
+
+
+        //変数num2を定義し、右辺に引数をtoneとtamaを入れて、関数large_numを実行
+
+        //文字列を連結しつつ開発者ツールに出力
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FizzBuzz問題</title>
+  </head>
+  <body>
+    <h1>FizzBuzz（フィズバズ）問題</h1>
+    <pre>
+    1から30までの数字を順番にコンソールに表示してください。ただし、
+      1. 3で割り切れる時 は数字の代わりに「Fizz」と表示。
+      2. 5で割り切れる時 は数字の代わりに「Buzz」と表示。
+      3. 両方（15など）で割り切れる時 は「FizzBuzz」と表示。
+    
+    </pre>
+    <script>
+      // 1から30までの数字を順番にコンソールに表示
+      for (let i = 1; i <= 30; i++) {
+        //まず、条件が厳しい、３でも５でも割り切れる場合、を最初にチェック
+        if (i % 3 === 0 && i % 5 === 0) {
+          console.log('FizzBuzz');
+        } else if (i % 3 === 0) {
+          // 3で割り切れる時、数字の代わりに「Fizz」と表示
+          console.log('Fizz');
+        } else if (i % 5 === 0) {
+          // 5で割り切れる時、数字の代わりに「Fizz」と表示
+          console.log('Buzz');
+        } else {
+          //数字を表示
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>

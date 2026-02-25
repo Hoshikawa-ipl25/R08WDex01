@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>変数について</title>
+  </head>
+
+  <body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>変数について</h2>
+    <div class="inner">
+      <pre>
+変数とは、データを格納しておくための箱のような物
+
+変数を作り、その変数に値（データ）を格納（代入）する方法。
+const 変数名 = 'データ';
+
+変数自体を出力することで、変数の中身（代入されたデータ）を出力することができる。
+
+console.log(変数名);
+
+なお、変数を作成することを「定義する」という言い方をする場合もある。
+      </pre>
+      <p id="text">pタグはここ</p>
+    </div>
+
+    <script>
+      //変数testを作り、値（データ）を格納（代入）
+      //今回のデータは、「こんにちは」という文字
+      const test = 'こんにちは';
+      //開発者ツールに変数testを出力
+      console.log(test);
+
+      //idがtextのpタグに変数testを出力
+      document.querySelector('#text').innerHTML = test;
+    </script>
+  </body>
+</html>

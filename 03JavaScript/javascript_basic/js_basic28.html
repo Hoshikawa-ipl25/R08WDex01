@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真偽値とif文</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #text {
+            display: none;
+        }
+
+        #text.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>真偽値とif文</h2>
+    <div class="inner">
+        <pre>
+真偽値は、if文の条件に使ったとき、trueだったら条件を通り、falseだったら通らない仕様になっている。
+
+const check = true;
+
+if(check){
+    console.log('変数checkには、trueが代入されているので必ず条件は成り立つ');
+}
+
+チェック用の変数を作り、if文を制御する際、trueとfalseを交互に入れ替えれば、
+一つのボタンを押すたびに処理が変える事ができる。（トグル処理と呼ぶ）
+
+let check2 = true;
+let btn = document.querySelector('#btn');
+
+条件分岐のifとelseの処理に、check2の値にtrueとfalseを交互に入れる様に設定する
+btn.addEventListener('click', () => {
+    if (check2) {
+        check2 = false;
+        let target = document.querySelector('#text');
+        target.classList = 'show';
+    } else {
+        check2 = true;
+        let target = document.querySelector('#text');
+        target.classList = '';
+    }
+});
+クラスをつけるには、classListにクラス名を入れる。
+逆にクラスを外したいときは、クラス名に空の文字列を入れる。
+</pre>
+    </div>
+    <p class="btn"><button id="btn">ボタン</button></p>
+    <div class="inner">
+        <div id="text">ここの文字は、ボタンをクリックする事で、出たり消えたりします。</div>
+    </div>
+    <script>
+        //変数checkにtrueを代入
+
+
+        //条件に変数checkを使って条件分岐させる
+
+        //変数check2にtrueを代入
+
+
+        //idがbtnの要素を変数に代入
+
+
+        //btnにイベントとリスナー関数を設定
+        //リスナー関数は無名関数
+
+
+            //条件にcheck2を使ったif文を書く
+            //条件が成り立つ方に、check2=falseを、
+            //条件が成り立たない方に、check2=trueを代入
+
+                //クラスを付け加えるには、一度変数にhtml要素を代入し、
+                //変数名.classListに値を代入する
+    </script>
+</body>
+
+</html>

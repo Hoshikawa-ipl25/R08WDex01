@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>関数の作り方</title>
+  </head>
+  <body>
+    <script>
+      // 関数の定義
+      // function 関数の名前（引数1,引数2,.....）{
+      //    させたい処理をここに書いていく
+      //
+      //　  引数1,引数2,...で受け取った値を使ってプログラム書いていく
+      //    戻さなきゃいけない計算結果などがあれば、return で渡す
+      //    return (外に渡す値が入った変数とか);
+      // }
+
+      function calculateTotal(price, tax) {
+        const result = Math.round(price * tax);
+        return result; // 結果を返す（戻り値）
+      }
+
+      // 関数の呼び出し（実行）
+      const myPayment = calculateTotal(1000, 1.1);
+      console.log(myPayment); // 結果: 1100
+
+      // console.log()の中に関数を書いてしまえることもできる
+      console.log(calculateTotal(1200, 1.08));
+
+      // 関数の中で、コンソールへの表示も行うようにしました
+      // 戻り値なし
+      function calculateTotalV2(price, tax) {
+        const myPayment = Math.round(price * tax);
+        console.log(myPayment);
+      }
+      calculateTotalV2(5000, 1.1);
+
+      // 渡す引数は変数なども可能
+      const shopping = 38000;
+      calculateTotalV2(shopping, 1.1);
+
+      //引数、戻り値なしの関数もつくれます。
+      // データの受け渡しを伴う処理ではなく、何か仕事するだけ。
+      function alertWindow() {
+        alert('休憩時間です！');
+      }
+      // 引数などを渡さずに呼び出すだけで実行
+      alertWindow();
+    </script>
+  </body>
+</html>

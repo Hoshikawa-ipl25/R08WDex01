@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>配列について</title>
+  </head>
+  <body>
+    <script>
+      // 配列の宣言
+      //[] をつけて代入すると、変数じゃなくて配列と定義されます
+      const colors = ['red', 'orange', 'green', 'blue', 'purple'];
+      console.log(colors[0]);
+      console.log(colors[2]);
+      console.log(colors);
+      console.log(colors[1]);
+      console.log(colors[4]);
+      // 配列に追加で代入
+      colors[5] = 'yellow';
+
+      console.log(colors[5]);
+
+      // 要素をとりだして並べて表示
+      console.log(colors[1] + ' , ' + colors[3]);
+
+      //  for文で配列の中身を繰り返し表示
+      const higashimarus = ['きつね', 'たぬき', '天ぷら', '月見', 'お肉', 'なべ焼き', 'わかめ'];
+
+      // (配列名).length  配列の中身の個数のデータ(数値)
+      for (let i = 0; i < higashimarus.length; i++) {
+        console.log(higashimarus[i]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for文について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>for文について</h2>
+    <div class="inner">
+        <pre>
+書き方
+for(カウンターのセット;繰り返す条件;カウンターの処理){
+    繰り返す処理
+}
+
+let count = 0;
+
+for(count;count&lt;3;count++){
+    console.log('繰り返し');
+}
+
+ー＞（3）繰り返し
+本来なら「繰り返し」という文字が3回出力されるが、同じ言葉なので開発者ツールでは（3）と表示される
+
+なお、一般的にはわざわざカウンターを変数て定義せず、for文と一緒に書くのが普通。
+さらに、カウンター用の変数は、「i」を使う人が多い。
+カウンター用の変数は、繰り返し処理の中で出力などに使う事ができる。
+for(let i;i$lt;3;i++){
+    console.log(i);
+}
+ー＞0
+ー＞1
+ー＞2
+</pre>
+    </div>
+    <script>
+        //カウンター用の変数countを定義
+        //途中1を足す必要があるのでletを使う
+
+
+        //文字列「繰り返し」の文字を3回、開発者ツールに出力
+
+
+
+        //iを使ってfor文を記述。開発者ツールにiを出力
+
+
+    </script>
+</body>
+
+</html>

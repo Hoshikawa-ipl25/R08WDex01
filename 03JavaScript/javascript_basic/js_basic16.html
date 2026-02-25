@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日の日付を出力</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>今日の日付を出力</h2>
+    <div class="inner">
+        <pre>
+日付を扱うためには、「new Date()」を変数に代入するという特別な決まりがある。
+const today = new Date();
+
+また、年、月、日と言った情報は、getFullYear()、getMonth()、getDate()のように、特別な記述で取得できる仕様になっている。
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const date = today.getDate();
+const day = today.getDay();
+
+※月は、0から始まる数値が入る仕様なので、1を足す必要がある。(1月が0、2月が1)
+
+よく使う記述
+年：getFullYear()
+月：getMonth()
+日：getDate()
+曜日：getDay()
+時間：getHours()
+分：getMinutes()
+秒：getSeconds()
+ミリ秒：getMilliseconds()
+
+let now_date = year + '年' + month + '月' + date + '日';
+※今回は、最後に曜日を追記したいので、constではなくletを使う。
+
+最後に曜日を追加したいが、getDay()の値は、0〜6の数値なので、if文で切り分ける必要がある。
+なお、文字列の結合の応用で、「+=」を使うと追記する事ができる。
+
+if(day == 0){
+    now_date += '（日）';
+}else if(day == 1){
+    now_date += '（月）';
+}else if(day == 2){
+    now_date += '（火）';
+}else if(day == 3){
+    now_date += '（水）';
+}else if(day == 4){
+    now_date += '（木）';
+}else if(day == 5){
+    now_date += '（金）';
+}else if(day == 6){
+    now_date += '（土）';
+}
+
+const hizuke = document.querySelector('#hizuke');
+hizuke.innerHTML = now_date;
+</pre>
+        <p id="hizuke"></p>
+    </div>
+    <script>
+        //変数todayにnew Date()を代入（正確には代入ではなくインスタンス化と呼ぶ）
+
+
+        //変数yearに年を代入
+
+
+        //変数monthに月を代入（1を足す）
+
+
+        //変数dateに日を代入
+
+
+        //変数dayに曜日を代入
+
+
+        //変数now_dateに年月日の値と文字列を結合
+        //後ほど曜日を追記する必要があるのでletを使う
+
+
+        //変数dayの値に応じて曜日を追記
+
+
+
+
+
+        //変数now_dateをidがhizukeのpタグに出力
+
+    </script>
+</body>
+
+</html>

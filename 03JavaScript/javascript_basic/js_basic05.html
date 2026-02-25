@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変数の種類について</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>変数の種類について</h2>
+    <div class="inner">
+        <pre>
+変数には、var、let、constの三種類の定義方法がある
+
+変数の作り方
+var 変数名
+or
+let 変数名
+or
+const 変数名;
+
+各々の違い
+varは、従来からある方法、変数の有効範囲が広いため、名前が被らないように注意しなくてはならない。
+letは、割と最近に追加された方法。有効範囲が狭く、名前が被りにくく使い勝手が良い。
+constは、let同様有効範囲が狭く、変更も不可。もっとも使いやすい。
+基本的に変数は、使い方が限られている方が使いやすい。
+逆に、使い方が自由であればあるほど、間違えないように気を配る箇所が増える。
+
+基本的には、変数の有効範囲（スコープという）が狭い順に使う、
+変数の値を変更する必要がない時は「const」、
+変更する必要がある時や、追記する必要がある時は「let」、
+スコープをプログラム全域（グローバル変数）とする必要がある時は「var」、
+この順番でOK。
+
+現時点では、少し難しすぎる考え方なので、以下のように考えてOK
+const > let > var
+の順でOK
+
+変数の追記について
+
+let mozi = '&lt;p&gt;';
+    mozi += 'こんにちは';
+    mozi += '&lt;/p&gt;';
+    console.log(mozi);
+    ＝＞&lt;p&gt;こんにちは&lt;/p&gt;が出力される
+
+
+</pre>
+    </div>
+    <script>
+        //letで変数moziを作成して、文字列「<p>」を代入
+
+
+        //変数moziに、文字列「こんにちは」を追記
+
+
+        //さらに変数moziに、文字列「</p>」を代入
+
+
+        //開発者ツールに変数moziを出力
+
+    </script>
+</body>
+
+</html>

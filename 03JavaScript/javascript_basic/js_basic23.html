@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の定義と実行方法</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>関数の定義と実行方法</h2>
+    <div class="inner">
+        <pre>
+関数の定義方法は複数ある。
+1.他のプログラムでもよく使われる方法
+function 関数名([引数]){
+    処理
+}
+
+2.javascriptならではの変数に格納する方法
+const 関数名 = function([引数]){
+    処理
+}
+
+3.最近の書き方（アロー関数）
+const 関数名 = ([引数])=>{
+    処理
+}
+
+※どの書き方も引数は省略可能。引数に関する説明は後述
+
+実行方法
+関数名([引数]);
+
+
+function kansu1(){
+    console.log('関数1です');
+}
+
+const kansu2 = function(){
+    console.log('関数2です');
+}
+
+const kansu3 = ()=>{
+    console.log('関数3です');
+}
+
+kansu1();
+ー＞関数1です
+
+kansu2();
+ー＞関数2です
+
+kansu3();
+ー＞関数3です
+
+    </pre>
+    </div>
+    <script>
+        //関数kansu1を定義
+
+
+        //関数kansu2を変数を使う形で定義
+
+
+        //関数kansu3をアロー関数で定義
+
+
+        //kansu1を実行
+
+
+        //kansu2を実行
+
+
+        //kansu3を実行
+
+    </script>
+</body>
+
+</html>

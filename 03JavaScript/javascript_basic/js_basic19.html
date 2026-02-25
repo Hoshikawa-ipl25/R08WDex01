@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列と繰り返し</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="under">
+    <h1><a href="index.html">javascript基礎</a></h1>
+    <h2>配列と繰り返し</h2>
+    <div class="inner">
+        <pre>
+配列と繰り返し処理は相性がよい。
+配列に出力したいデータを格納しておいて、一気に出力する事が出来る。
+
+const foods =[
+    'パスタ',
+    'ハンバーグ',
+    'カレー',
+    'ステーキ'
+];
+
+for(let i = 0;i&lt;4;i++){
+    console.log(foods[i]);
+};
+ー＞パスタ
+ー＞ハンバーグ
+ー＞カレー
+ー＞ステーキ
+
+なお、配列の中に何個データが入っているかは、
+配列名.length
+で取得できるため、配列の中のデータを全て出力する場合は、lengthを使うのが一般的。
+
+for(let i = 0;i&lt;foods.length;i++){
+    console.log(foods[i]);
+}
+ー＞パスタ
+ー＞ハンバーグ
+ー＞カレー
+ー＞ステーキ
+</pre>
+    </div>
+    <script>
+        //配列foodsを定義して、複数の食べ物を文字列で格納
+
+
+        //for文で一気に出力
+
+
+        //lengthを使った場合
+
+    </script>
+</body>
+
+</html>
