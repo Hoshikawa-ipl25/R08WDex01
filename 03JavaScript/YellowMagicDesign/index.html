@@ -17,7 +17,10 @@
     <!-- slickのCSSファイル読み込み -->
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
+    <!-- aos.jsのCSSファイル -->
+    <link rel="stylesheet" href="aos/aos.css" />
 
+    <!-- 自分で作ったCSSファイルは最後に読み込む -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -41,9 +44,14 @@
 
     <main>
       <div class="mv">
-        <h1 class="mv-copy">はっ！とするような<br />オドロキを</h1>
+        <h1 class="mv-copy" data-aos="fade-up" data-aos-duration="3000">はっ！とするような<br />オドロキを</h1>
         <p class="mv-subcopy">
-          私たちのミッションは黄色のように、<br />はっ！と目にとまるデザインを世の中に仕掛けること。
+          <span class="block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+            私たちのミッションは黄色のように、
+          </span>
+          <span class="block" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600">
+            はっ！と目にとまるデザインを世の中に仕掛けること。</span
+          >
         </p>
       </div>
 
@@ -51,7 +59,7 @@
         <h2 class="section-head">Our Service</h2>
         <div class="container">
           <ul class="service-list">
-            <li>
+            <li data-aos="fade-up">
               <div class="service-card">
                 <h3 class="service-card__head">Graphic Design</h3>
                 <div class="service-card__fig">
@@ -62,7 +70,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="300">
               <div class="service-card">
                 <h3 class="service-card__head">Web Design</h3>
                 <div class="service-card__fig">
@@ -73,7 +81,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="600">
               <div class="service-card">
                 <h3 class="service-card__head">Product Design</h3>
                 <div class="service-card__fig">
@@ -236,11 +244,17 @@
         <small class="site-footer-copyright">&copy; Yellow Magic Design</small>
       </div>
     </footer>
+    <!-- jQueryのファイル -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- <script src="js/jquery-4.0.0.min.js"></script> -->
 
     <!-- slickのファイル -->
     <script src="slick/slick.min.js"></script>
+
+    <!-- aos.jsのファイル -->
+    <script src="aos/aos.js"></script>
+
+    <!-- 自分で作ったjsファイルは最後に読み込む -->
     <script src="js/script.js"></script>
   </body>
 </html>

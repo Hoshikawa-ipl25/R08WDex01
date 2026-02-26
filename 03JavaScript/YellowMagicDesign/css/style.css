@@ -357,7 +357,7 @@ body {
   height: 40px;
   box-shadow: 0 0 12px 0 rgb(0 0 0 / 10%);
   border-radius: 50%;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .slick-prev {
@@ -616,4 +616,17 @@ body {
 
 .pagetop:hover {
   opacity: 0.9;
+}
+/* ***************************************************************** */
+/* 追記 2026.2.26*/
+/* スライダーのドットの大きさ調整 */
+.slick-dots li button:before {
+  font-size: 20px;
+}
+
+/* mvのコピー文もfadeupさせるために
+spanタグをブロック要素に変更
+（高さの性質がある「ブロック要素」にしないと、縦方向の動きをしてくれない） */
+.block {
+  display: block;
 }
