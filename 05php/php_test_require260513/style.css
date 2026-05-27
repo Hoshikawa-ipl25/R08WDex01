@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff; /* 好きな背景色 */
+  color: #666666; /* 好きな文字色 */
+
+  /*ブラウザの左上のきわじゃなく、ちょっと余白をとりつつ結果を表示*/
+  padding-top: 30px;
+  padding-left: 70px;
+
+  /* 他、すきなCSSを記入 */
+}

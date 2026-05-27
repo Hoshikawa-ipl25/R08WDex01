@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/********************************************************/
+/* 共通設定 */
+/********************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/********************************************************/
+/* ロボット スタート画面 */
+/********************************************************/
+
+.main_title {
+  width: 500px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.start_btn {
+  display: block;
+  width: 300px;
+  line-height: 70px;
+  background-color: #da3a65;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+}
+.start_btn:hover {
+  opacity: 0.7;
+}
+.ver_text {
+  color: #999;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/********************************************************/
+/* ロボット フォーム画面 */
+/********************************************************/
+.robot_detail {
+  width: 500px;
+  padding: 50px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 3px #999;
+}
+h1 {
+  margin-bottom: 36px;
+}
+
+dl {
+  margin-bottom: 48px;
+}
+dd {
+  margin-bottom: 24px;
+}
+
+input {
+  padding: 1em;
+}
+
+select {
+  padding: 1em;
+}
+
+.radio_btn label {
+  margin-right: 16px;
+}
+
+button {
+  background-color: #da3a65;
+  color: #fff;
+  width: 300px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+/********************************************************/
+/* ロボ出現ページ　戻るボタン */
+/********************************************************/
+.back_btn {
+  display: block;
+  background-color: #da3a65;
+  color: #fff;
+  width: 70px;
+  /* ↓heightではなく、line-heightで高さを作ると、
+  中身の文字（inline）が垂直方向真ん中に来る */
+  line-height: 70px;
+  text-align: center;
+  border-radius: 35px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.back_btn:hover {
+  opacity: 0.7;
+}
+
+/********************************************************/
+/* ロボット出現の背景画像 */
+/********************************************************/
+.robo_bg {
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/********************************************************/
+/* ロボの名前表示 */
+/********************************************************/
+figure {
+  width: fit-content;
+  position: absolute;
+}
+figure img {
+  width: 100%;
+}
+figcaption {
+  width: fit-content;
+  color: #fff;
+  margin: 0 auto;
+  border: 1px solid #999;
+  padding: 0 1em;
+  border-radius: 100px;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+  background-color: #f3ebff; /* 好きな背景色を置きましょう */
+  color: #5f1925; /* 好きな文字色を置きましょう */
+  padding-top: 30px;
+  padding-left: 70px;
+}
+
+input[type='text'] {
+  line-height: 1.5;
+}
