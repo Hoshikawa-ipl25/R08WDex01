@@ -1,3 +1,9 @@
+<?php
+
+/** @var WP_Post $post */
+global $post;
+?>
+
 <?php get_header(); ?>
 
 <?php if (have_posts()): ?>

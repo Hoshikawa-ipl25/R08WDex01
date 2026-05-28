@@ -1,3 +1,6 @@
+<!-- コードの実験場ファイルです -->
+<!-- 本物は「page.php」です。 -->
+
 <?php get_header(); ?>
 
 <?php if (have_posts()): ?>

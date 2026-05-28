@@ -9,8 +9,6 @@
   <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
   <!-- <script type="text/JavaScript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
   <!-- <script type="text/JavaScript" src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script> -->
-
-
   <?php
   //CSSのファイルを読み込む関数,wp_enqueue_style();
   wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
@@ -50,9 +48,11 @@
         ];
         wp_nav_menu($args);
         ?>
+
         <div class="header_info">
-          <form class="header_search">
-            <input type="text" aria-label="Search">
+          <!-- 検索窓 -->
+          <form action="<?php echo home_url('/'); ?>" method="get" class="header_search">
+            <input type="text" name="s" value="<?php the_search_query(); ?>" aria-label="Search">
             <button type="submit"><i class="fas fa-search"></i></button>
           </form>
 
@@ -68,7 +68,7 @@
               </dl>
             </div>
             <p>
-              <a href="#"><i class="fa-solid fa-envelope"></i><span>ご予約・お問い合わせ</span></a>
+              <a href="<?php echo home_url('/contact'); ?>"><i class="fa-solid fa-envelope"></i><span>ご予約・お問い合わせ</span></a>
             </p>
           </div>
         </div>

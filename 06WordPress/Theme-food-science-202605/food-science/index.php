@@ -10,6 +10,8 @@
           } else {
             // wp_title('');
             echo single_cat_title();
+            //single_cat_title(); は、カテゴリー別アーカイブページでのカテゴリー名を取得
+            //https://lovelog.eternal-tears.com/wp-reference/single_cat_title/
           }
           ?>
         </h1>
