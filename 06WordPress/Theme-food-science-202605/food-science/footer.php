@@ -1,6 +1,11 @@
 <footer class="footer">
+
   <!-- パンくずリスト -->
-  <?php get_template_part('template-parts/breadcrumb'); ?>
+  <!-- 条件文　homeのページ「じゃない」時 -->
+  <?php if (!(is_home())): ?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+  <?php endif ?>
+
 
   <div class="footer_inner">
     <div class="footer_info">
