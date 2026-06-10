@@ -7,11 +7,49 @@
       <p class="kv_subtitle">FROM JAPAN</p>
     </div>
 
-    <div class="kv_slider js-slider">
-      <div class="kv_sliderItem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/kv-01@2x.jpg');"></div>
-      <div class="kv_sliderItem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/kv-02@2x.jpg');"></div>
-      <div class="kv_sliderItem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/kv-03@2x.jpg');"></div>
-    </div>
+    <!-- メインビジュアル投稿の画像URLを取るためのサブループの設定 -->
+    <!-- 教科書P.230 -->
+    <?php
+    $args = [
+      'post_type' => 'main_visual', //管理画面で書きまちがえたので、教科書と違う名前になっています。投稿タイプのスラッグを統一して書けばOK
+      'posts_per_page' => -1,
+    ];
+    $meta_query = ['relation' => 'OR'];
+    // 公開終了日が未来のもの
+    $meta_query[] = [
+      'key' => 'end_date',
+      'type' => 'DATETIME',
+      'compare' => '>',
+      'value' => date('Y-m-d H:i:s'),
+    ];
+    // 公開終了日が空のもの
+    $meta_query[] = [
+      'key' => 'end_date',
+      'value' => ''
+    ];
+    $meta_query[] = [
+      'key' => 'end_date',
+      'compare' => 'NOT EXISTS'
+    ];
+
+    $args['meta_query'] = $meta_query;
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()):
+    ?>
+      <div class="kv_slider js-slider">
+
+        <!-- メインビジュアル投稿タイプで投稿した記事での画像が表示される -->
+        <?php while ($the_query->have_posts()): $the_query->the_post();
+          $pic = get_field('pic');
+        ?>
+          <div class="kv_sliderItem" style="background-image: url('<?php echo $pic['url']; ?>');"></div>
+
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      </div>
+    <?php endif; ?>
+
     <div class="kv_overlay"></div>
 
     <div class="kv_scroll">
